@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY diff_cleaner.py /app/
+COPY diff_cleaner.py /app/
+COPY diff_cleaner.py /app/
+RUN pip install --no-cache-dir \
+    google-cloud-firestore \
+    google-cloud-bigquery
+ENTRYPOINT ["python", "diff_cleaner.py"]

@@ -1,0 +1,5 @@
+2025-08-07 19:30:22.301 [warning] Dir "/home/ariel/.pixi/envs" is not watchable (directory does not exist)
+2025-08-07 19:30:22.301 [info] Python interpreter path: /bin/python
+2025-08-07 19:30:22.541 [info] > pyenv which python
+2025-08-07 19:30:22.541 [info] cwd: .
+2025-08-07 19:30:25.381 [info] Starting Jedi language server for ariel.

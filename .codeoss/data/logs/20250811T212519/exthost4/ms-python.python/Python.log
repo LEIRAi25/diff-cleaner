@@ -1,0 +1,49 @@
+2025-08-11 22:09:58.351 [warning] Dir "/home/ariel/.pixi/envs" is not watchable (directory does not exist)
+2025-08-11 22:10:00.685 [info] Python interpreter path: /bin/python
+2025-08-11 22:10:01.320 [info] > pyenv which python
+2025-08-11 22:10:01.320 [info] cwd: .
+2025-08-11 22:10:04.768 [info] Starting Jedi language server for ariel.
+2025-08-11 22:14:54.185 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '/',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-11 22:14:54.185 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-11 22:15:39.749 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '/',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-11 22:15:39.749 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt

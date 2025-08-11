@@ -1,0 +1,116 @@
+import os
+import sys
+import json
+import base64
+import hashlib
+import logging
+from google.cloud import firestore, bigquery
+from google.cloud.exceptions import Conflict
+from google.api_core import exceptions as api_exceptions
+
+# Configuration via environment variables
+env = os.environ
+PROJECT_ID = env.get("GOOGLE_CLOUD_PROJECT") or env.get("PROJECT_ID")
+FIRESTORE_COLLECTION = env.get("FIRESTORE_COLLECTION", "permit_hashes")
+BQ_DATASET = env.get("BQ_DATASET", "permits_raw")
+BQ_TABLE = env.get("BQ_TABLE", "landing")  # full table: {PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}
+
+# Configure logging for better output in production environments like Cloud Run
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+if not PROJECT_ID:
+    # Use critical level for fatal errors before exiting
+    logging.critical("FATAL: GOOGLE_CLOUD_PROJECT or PROJECT_ID environment variable not set.")
+    sys.exit(1)
+
+# Initialize clients
+fs_client = firestore.Client(project=PROJECT_ID)
+bq_client = bigquery.Client(project=PROJECT_ID)
+
+
+def compute_hash(permit_obj: dict) -> str:
+    """
+    Compute a SHA-256 hash of the JSON-serialized permit object.
+    """
+    # Ensure deterministic serialization
+    serialized = json.dumps(permit_obj, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+
+
+def is_new_hash(hash_str: str) -> bool:
+    """
+    Atomically check and create a document in Firestore for the given hash.
+    Returns True if the document was created, False if it already existed.
+    """
+    doc_ref = fs_client.collection(FIRESTORE_COLLECTION).document(hash_str)
+    try:
+        # The create() method is atomic and will raise a Conflict exception
+        # if the document already exists, preventing race conditions.
+        doc_ref.create({"inserted_at": firestore.SERVER_TIMESTAMP})
+        return True
+    except Conflict:
+        # The document already exists, so this is a duplicate.
+        return False
+
+
+def write_to_bigquery(permit_obj: dict):
+    """
+    Insert the permit object into BigQuery landing table.
+    """
+    table_id = f"{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}"
+    errors = bq_client.insert_rows_json(table_id, [permit_obj])
+    if errors:
+        logging.error(f"BigQuery insert errors: {errors}")
+        raise RuntimeError(f"BigQuery insert errors: {errors}")
+
+
+def main():
+    """
+    Entrypoint for the Cloud Run job.
+    Expects a Base64-encoded JSON payload as the first command-line argument.
+    It will fall back to parsing plain JSON if Base64 decoding fails.
+    """
+    # First, let's verify the Firestore connection as the logs indicate this is the problem area.
+    try:
+        # This is a simple, low-cost operation to check if the database is available.
+        # We just need to see if we can start iterating collections.
+        next(fs_client.collections(), None)
+        logging.info("Successfully connected to Firestore.")
+    except api_exceptions.NotFound:
+        logging.critical(f"FATAL: Firestore database not found in project '{PROJECT_ID}'.")
+        logging.critical("Please go to the GCP Console and ensure a Firestore (in Native Mode) database exists for this project.")
+        sys.exit(1)
+
+    if len(sys.argv) < 2:
+        logging.error("Usage: python diff_cleaner.py '<base64_json_payload>'")
+        sys.exit(1)
+
+    raw_input = sys.argv[1]
+    permit = None
+
+    # Pub/Sub messages are Base64 encoded. Try to decode first.
+    try:
+        # The `validate=True` flag ensures only valid Base64 is processed.
+        decoded = base64.b64decode(raw_input, validate=True).decode("utf-8")
+        permit = json.loads(decoded)
+    except (ValueError, TypeError, base64.binascii.Error):
+        logging.info("Input is not valid Base64. Falling back to parsing as plain JSON.")
+        try:
+            permit = json.loads(raw_input)
+        except json.JSONDecodeError:
+            logging.error("Input is not valid JSON.", exc_info=True)
+            sys.exit(1)
+
+    # Compute hash and dedupe
+    h = compute_hash(permit)
+    if not is_new_hash(h):
+        logging.info(f"Duplicate permit, hash={h}, skipping.")
+        return
+
+    # Insert into BigQuery
+    write_to_bigquery(permit)
+    logging.info(f"Successfully inserted new permit, hash={h}.")
+
+
+if __name__ == "__main__":
+    main()

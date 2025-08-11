@@ -1,0 +1,33 @@
+2025-08-07 19:23:28.471 [info] Extension host with pid 1210 started
+2025-08-07 19:23:28.471 [error] Error: EEXIST: file already exists, open '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock'
+2025-08-07 19:23:28.471 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-08-07 19:23:28.473 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': The pid 3479 appears to be gone.
+2025-08-07 19:23:28.473 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': Deleting a stale lock.
+2025-08-07 19:23:28.619 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onView:cloudcode.gemini.chatView'
+2025-08-07 19:23:28.621 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-07 19:23:28.622 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2025-08-07 19:23:28.622 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-07 19:23:28.622 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-07 19:23:28.623 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-07 19:23:28.640 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onTerminalProfile:cloudshell.default'
+2025-08-07 19:23:31.097 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-08-07 19:23:31.153 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': Lock acquired.
+2025-08-07 19:23:31.357 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-08-07 19:23:31.357 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-07 19:23:31.563 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+	at onErrorNT (node:internal/child_process:483:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-08-07 19:23:32.362 [info] Eager extensions activated
+2025-08-07 19:23:32.363 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-08-07 19:23:32.364 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-07 19:23:32.365 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-07 19:23:32.365 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-07 20:58:41.338 [error] [ms-python.python] provider FAILED
+2025-08-07 20:58:41.400 [error] Error: AttributeError: 'HoverDisable' object has no attribute 'namespace_'
+    at ae (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2049071)
+    at oe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2047031)
+    at Immediate.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/out/client/extension.js:2:2043325)
+    at processImmediate (node:internal/timers:483:21)
+2025-08-07 22:08:51.977 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1034
+2025-08-07 22:08:52.442 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1034

@@ -1,0 +1,62 @@
+2025-08-07 19:23:36.785 [warning] Dir "/home/ariel/.pixi/envs" is not watchable (directory does not exist)
+2025-08-07 19:23:36.829 [info] > pyenv which python
+2025-08-07 19:23:36.829 [info] cwd: .
+2025-08-07 19:23:37.305 [info] > /bin/python -I /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/get_output_via_markers.py /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/interpreterInfo.py
+2025-08-07 19:23:37.501 [info] Python interpreter path: /bin/python
+2025-08-07 19:23:41.797 [info] Starting Jedi language server for ariel.
+2025-08-07 20:21:02.054 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 20:21:30.992 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-07 20:21:30.992 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-07 20:30:01.810 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-07 20:30:01.810 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-07 20:34:55.226 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 20:34:57.052 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 20:35:05.980 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 20:35:06.676 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 20:35:07.045 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+

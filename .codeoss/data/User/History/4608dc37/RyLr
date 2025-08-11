@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy and install dependencies first to leverage Docker cache
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code
+COPY diff_cleaner.py .
+
+ENTRYPOINT ["python", "diff_cleaner.py"]

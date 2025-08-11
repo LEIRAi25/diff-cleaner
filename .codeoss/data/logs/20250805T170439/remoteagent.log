@@ -1,0 +1,11 @@
+2025-08-05 17:04:39.313 [info] 
+
+
+
+
+2025-08-05 17:04:39.332 [info] Extension host agent started.
+2025-08-05 17:04:39.354 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ariel/.codeoss/extensions
+2025-08-05 17:04:39.371 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ariel/.codeoss/extensions
+2025-08-05 17:04:41.059 [info] [127.0.0.1][6245dcc7][ManagementConnection] New connection established.
+2025-08-05 17:04:41.062 [info] [127.0.0.1][ff8bfcbc][ExtensionHostConnection] New connection established.
+2025-08-05 17:04:44.345 [info] [127.0.0.1][ff8bfcbc][ExtensionHostConnection] <1279> Launched Extension Host Process.

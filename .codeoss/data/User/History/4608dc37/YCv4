@@ -1,0 +1,19 @@
+# Use an official Python runtime as a parent image.
+# Using a slim image keeps the container size down.
+FROM python:3.11-slim
+
+# Set the working directory inside the container.
+WORKDIR /app
+
+# Copy the requirements file into the container.
+COPY requirements.txt .
+
+# Install the Python dependencies.
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application's source code into the container.
+COPY . .
+
+# Define the command to run when the container starts.
+# This ensures diff_cleaner.py is the main script.
+ENTRYPOINT ["python3", "diff_cleaner.py"]

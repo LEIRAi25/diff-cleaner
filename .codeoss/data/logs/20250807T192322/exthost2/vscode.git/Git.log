@@ -1,0 +1,53 @@
+2025-08-07 19:30:22.307 [info] [main] Log level: Info
+2025-08-07 19:30:22.307 [info] [main] Validating found git in: "git"
+2025-08-07 19:30:22.307 [info] [main] Using git "2.43.0" from "git"
+2025-08-07 19:30:22.307 [info] [Model][doInitialScan] Initial repository scan started
+2025-08-07 19:30:22.307 [info] > git rev-parse --show-toplevel [4577ms]
+2025-08-07 19:30:22.307 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.307 [info] > git rev-parse --show-toplevel [10ms]
+2025-08-07 19:30:22.307 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.320 [info] > git rev-parse --show-toplevel [3ms]
+2025-08-07 19:30:22.320 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.339 [info] > git rev-parse --show-toplevel [10ms]
+2025-08-07 19:30:22.339 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.356 [info] > git rev-parse --show-toplevel [3ms]
+2025-08-07 19:30:22.356 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.468 [info] > git rev-parse --show-toplevel [103ms]
+2025-08-07 19:30:22.469 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.544 [info] > git rev-parse --show-toplevel [20ms]
+2025-08-07 19:30:22.544 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.574 [info] > git rev-parse --show-toplevel [5ms]
+2025-08-07 19:30:22.574 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.585 [info] > git rev-parse --show-toplevel [2ms]
+2025-08-07 19:30:22.585 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-07 19:30:22.586 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-08-07 22:09:43.102 [info] > git rev-parse --show-toplevel [2ms]
+2025-08-07 22:09:43.134 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2025-08-07 22:09:43.151 [info] [Model][openRepository] Opened repository (path): /home/ariel
+2025-08-07 22:09:43.151 [info] [Model][openRepository] Opened repository (real path): /home/ariel
+2025-08-07 22:09:43.169 [info] > git config --get commit.template [4ms]
+2025-08-07 22:09:43.182 [info] [Git][getRemotes] No remotes found in the git config file
+2025-08-07 22:09:43.183 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-08-07 22:09:43.184 [warning] [Git][getBranch] No such branch: master
+2025-08-07 22:09:43.218 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-08-07 22:09:43.241 [info] > git status -z -uall [45ms]
+2025-08-07 22:09:43.628 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [317ms]
+2025-08-07 22:09:43.630 [warning] [Git][getBranch] No such branch: master
+2025-08-07 22:09:43.631 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-08-07 22:09:43.633 [info] > git config --get commit.template [5ms]
+2025-08-07 22:09:43.644 [info] [Git][getRemotes] No remotes found in the git config file
+2025-08-07 22:09:43.646 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-08-07 22:09:43.646 [warning] [Git][getBranch] No such branch: master
+2025-08-07 22:09:43.677 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-08-07 22:09:43.696 [info] > git status -z -uall [40ms]
+2025-08-07 22:10:43.137 [info] > git check-ignore -v -z --stdin [2ms]
+2025-08-07 22:11:43.091 [info] > git check-ignore -v -z --stdin [3ms]

@@ -1,0 +1,214 @@
+2025-08-07 04:57:04.300 [warning] Dir "/home/ariel/.pixi/envs" is not watchable (directory does not exist)
+2025-08-07 04:57:04.301 [info] Python interpreter path: /bin/python
+2025-08-07 04:57:04.340 [info] > pyenv which python
+2025-08-07 04:57:04.340 [info] cwd: .
+2025-08-07 04:57:12.042 [info] Starting Jedi language server for ariel.
+2025-08-07 05:12:20.412 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-07 05:12:20.412 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-07 05:15:56.475 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 05:22:16.499 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-07 05:22:16.499 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-07 05:22:16.730 [info] Running installed packages checker:  {
+  id: '/bin/python',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python',
+  architecture: 3,
+  sysVersion: '3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]',
+  version: {
+    raw: '3.12.3',
+    major: 3,
+    minor: 12,
+    patch: 3,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.12.3 64-bit',
+  detailedDisplayName: 'Python 3.12.3 64-bit',
+  type: undefined
+} /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
+2025-08-07 05:22:16.730 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-07 05:28:31.728 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 05:28:34.968 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 05:28:46.925 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 05:28:48.066 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 05:29:09.988 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 05:32:27.473 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:08:18.739 [info] Discover tests for workspace name: ariel - uri: /home/ariel/.gemini/settings.json
+2025-08-07 06:23:44.894 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:30:04.784 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:31:34.268 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:42:17.995 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:43:59.063 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:44:16.672 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:45:49.816 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:48:37.862 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:53:03.160 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:53:29.160 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:54:54.037 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:55:06.705 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:55:24.342 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:55:35.432 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 06:56:44.828 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 07:01:39.847 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 07:04:03.364 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 07:24:16.334 [info] Send text to terminal: # First, get your project number, which is used in the service account's email address
+PROJECT_NUMBER=$(gcloud projects describe vantage-468221 --format='value(projectNumber)')
+
+# Define the Cloud Build service account email
+CLOUDBUILD_SA="${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com"
+
+# --- Grant Required Roles ---
+
+# 1. (Fixes current error) Allow Cloud Build to access source code and perform its duties
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/cloudbuild.serviceAgent"
+
+# 2. (Proactive fix) Allow Cloud Build to push images to Artifact Registry
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/artifactregistry.writer"
+
+# 3. (Proactive fix) Allow Cloud Build to update your Cloud Run job
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/run.admin"
+
+# 4. (Proactive fix) Allow Cloud Build to act as the Cloud Run job's service account during deployment
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/iam.serviceAccountUser"
+
+2025-08-07 07:30:24.684 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 07:45:46.459 [info] Send text to terminal: # The service account your Cloud Run job runs as
+RUN_SA="vantage-cloud@vantage-468221.iam.gserviceaccount.com"
+
+echo "Granting permissions to Cloud Run service account: ${RUN_SA}"
+
+# Allow the job to read/write to Firestore
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${RUN_SA}" \
+    --role="roles/datastore.user"
+
+# Allow the job to write to BigQuery
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${RUN_SA}" \
+    --role="roles/bigquery.dataEditor"
+
+echo "Permissions granted."
+
+2025-08-07 07:46:13.808 [info] Send text to terminal: # Get your project number, which is part of the Cloud Build service account's email
+PROJECT_NUMBER=$(gcloud projects describe vantage-468221 --format='value(projectNumber)')
+
+# Define the Cloud Build service account email
+CLOUDBUILD_SA="${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com"
+
+echo "Granting permissions to Cloud Build service account: ${CLOUDBUILD_SA}"
+
+# 1. (Fixes the build error) Allow Cloud Build to access source code and perform its duties
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/cloudbuild.builds.builder"
+
+# 2. (Proactive fix) Allow Cloud Build to push images to Artifact Registry
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/artifactregistry.writer"
+
+# 3. (Proactive fix) Allow Cloud Build to update your Cloud Run job
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/run.admin"
+
+# 4. (Proactive fix) Allow Cloud Build to act as the Cloud Run job's service account during deployment
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/iam.serviceAccountUser"
+
+echo "All necessary permissions have been granted."
+
+2025-08-07 07:48:02.373 [info] Send text to terminal: # Get your project number again, just in case
+PROJECT_NUMBER=$(gcloud projects describe vantage-468221 --format='value(projectNumber)')
+CLOUDBUILD_SA="${PROJECT_NUMBER}@cloudbuild.gserviceaccount.com"
+
+echo "Granting necessary roles to ${CLOUDBUILD_SA}..."
+
+# 1. (Fixes current error) Allow Cloud Build to access source code and logs
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/cloudbuild.builds.builder"
+
+# 2. (Proactive fix) Allow Cloud Build to push images to Artifact Registry
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/artifactregistry.writer"
+
+# 3. (Proactive fix) Allow Cloud Build to update your Cloud Run job
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/run.admin"
+
+# 4. (Proactive fix) Allow Cloud Build to act as the Cloud Run job's service account
+gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:${CLOUDBUILD_SA}" \
+    --role="roles/iam.serviceAccountUser"
+
+echo "All permissions have been granted. Please try your build again."
+
+2025-08-07 07:50:30.534 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 07:50:37.174 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 07:55:37.695 [info] Send text to terminal: gcloud projects add-iam-policy-binding vantage-468221 \
+    --member="serviceAccount:270221788805-compute@developer.gserviceaccount.com" \
+    --role="roles/logging.logWriter"
+
+2025-08-07 07:57:39.889 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 07:58:31.817 [info] Send text to terminal: gcloud builds submit --config cloudbuild.yaml .
+
+2025-08-07 09:11:00.523 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
+2025-08-07 09:14:09.373 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py

@@ -1,0 +1,38 @@
+substitutions:
+  _REGION: 'us-central1'
+  _JOB_NAME: 'diff-cleaner'
+  _IMAGE_NAME: "us-central1-docker.pkg.dev/$PROJECT_ID/permits/diff-cleaner"
+
+steps:
+# Step 1: Build the container image using the Dockerfile.
+# The image is tagged with 'latest' for easy reference.
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '-t'
+  - '${_IMAGE_NAME}:${SHORT_SHA}'
+  - '.'
+
+# Step 2: Push the newly built container image to Google Artifact Registry.
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'push'
+  - '${_IMAGE_NAME}:${SHORT_SHA}'
+
+# Step 3: Update the Cloud Run job to use the new image and set environment variables.
+# This ensures the running job always has the latest code and configuration.
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  args:
+  - 'run'
+  - 'jobs'
+  - 'update'
+  - '${_JOB_NAME}'
+  - '--image'
+  - '${_IMAGE_NAME}:${SHORT_SHA}'
+  - '--region'
+  - '${_REGION}'
+  - '--set-env-vars=FIRESTORE_DATABASE_ID=vantage_db'
+  - '--service-account'
+  - 'vantage-cloud@vantage-468221.iam.gserviceaccount.com'
+  

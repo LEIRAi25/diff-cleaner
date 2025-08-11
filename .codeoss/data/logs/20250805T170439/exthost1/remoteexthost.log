@@ -1,0 +1,28 @@
+2025-08-05 17:04:46.028 [info] Extension host with pid 1279 started
+2025-08-05 17:04:46.066 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': Lock acquired.
+2025-08-05 17:04:46.165 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-05 17:04:47.168 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-08-05 17:04:54.171 [info] Not activating extension 'redhat.java': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2025-08-05 17:04:54.173 [info] Not activating extension 'vscjava.vscode-java-dependency': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2025-08-05 17:04:54.173 [info] Not activating extension 'vscjava.vscode-java-test': Timed out while searching for 'workspaceContains' pattern */pom.xml,*/build.gradle,*/settings.gradle,*/build.gradle.kts,*/settings.gradle.kts,*/.classpath
+2025-08-05 17:04:54.173 [info] Not activating extension 'vscjava.vscode-maven': Timed out while searching for 'workspaceContains' pattern **/pom.xml
+2025-08-05 17:04:57.182 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-08-05 17:04:57.183 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-08-05 17:04:57.184 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-08-05 17:04:57.185 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-05 17:04:57.186 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-05 17:07:46.282 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-08-05 17:07:46.282 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-05 17:07:46.680 [info] Eager extensions activated
+2025-08-05 17:07:46.985 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-05 17:07:46.986 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-05 17:07:46.987 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-05 17:07:47.254 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-05 17:07:49.868 [error] onWillSaveTextDocument-listener from extension 'EditorConfig.EditorConfig' threw ERROR
+2025-08-05 17:07:49.876 [error] Error: timeout
+    at Timeout._onTimeout (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:135:108282)
+    at listOnTimeout (node:internal/timers:581:17)
+    at processTimers (node:internal/timers:519:7)
+2025-08-05 17:07:49.899 [error] Pmt@https://970-cs-111441252495-default.cs-us-central1-pits.cloudshell.dev/cde-ac9be7e07e1e619eda4eef010eafae488db4a309/static/out/vs/code/browser/workbench/workbench.js:8:158
+svi@https://970-cs-111441252495-default.cs-us-central1-pits.cloudshell.dev/cde-ac9be7e07e1e619eda4eef010eafae488db4a309/static/out/vs/code/browser/workbench/workbench.js:3255:3289
+@https://970-cs-111441252495-default.cs-us-central1-pits.cloudshell.dev/cde-ac9be7e07e1e619eda4eef010eafae488db4a309/static/out/vs/code/browser/workbench/workbench.js:3255:4578

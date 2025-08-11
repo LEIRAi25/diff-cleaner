@@ -1,0 +1,23 @@
+steps:
+- name: 'docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/vantage-468221/permits/diff-cleaner:latest', '.']
+- name: 'docker'
+  args: ['push', 'us-central1-docker.pkg.dev/vantage-468221/permits/diff-cleaner:latest']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  args:
+  - 'run'
+  - 'jobs'
+  - 'update'
+  - 'diff-cleaner'
+  - '--image'
+  - 'us-central1-docker.pkg.dev/vantage-468221/permits/diff-cleaner:latest'
+  - '--region'
+  - 'us-central1'
+  - '--command'
+  - 'python3'
+  - '--args'
+  - 'diff_cleaner.py'
+  - '--set-env-vars=FIRESTORE_DATABASE_ID=data-base,PROJECT_ID=vantage-468221'
+  - '--service-account'
+  - 'vantage-cloud@vantage-468221.iam.gserviceaccount.com'

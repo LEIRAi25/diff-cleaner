@@ -1,0 +1,23 @@
+# Default gcloud ignore rules
+.gcloudignore
+
+# Cloud Build
+cloudbuild.yaml
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code / Code OSS
+.vscode/
+.codeoss/
+
+# Other tool caches and configs
+.cache/
+.config/
+.docker/
+.gemini/
+.npm/
+
+# Git
+.git/
