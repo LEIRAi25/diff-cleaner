@@ -151,3 +151,21 @@ gcloud builds triggers create github
 gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^master$   --build-config=cloudbuild.yaml
 gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^master$   --build-config=cloudbuild.yaml
 echo "Testing the Cloud Build trigger." >> README.md
+git add .
+git commit -m "Test Cloud Build trigger"
+git push
+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
+git push
+gh auth setup-git
+git push
+git remote remove origin
+git remote add origin https://LEIRAi25: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@github.com/LEIRAi25/diff-cleaner.git
+git push
+git push --set-upstream origin master
+ssh-keygen -t ed25519 -C "ariel@leir.homes"
+cat ~/.ssh/id_ed25519.pub
+git remote remove origin
+git remote add origin git@github.com:LEIRAi25/diff-cleaner.git
+git push --set-upstream origin master
+cloudshell_open cloudbuild.yaml
+options:
