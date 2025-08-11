@@ -1,0 +1,25 @@
+2025-08-11 23:14:43.643 [info] Extension host with pid 6623 started
+2025-08-11 23:14:43.643 [error] Error: EEXIST: file already exists, open '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock'
+2025-08-11 23:14:43.643 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onView:cloudcode.gemini.chatView'
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-08-11 23:14:43.643 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-08-11 23:14:43.673 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c/vscode.lock': The lock does not look stale, elapsed: 741 ms, giving up.
+2025-08-11 23:14:43.694 [info] Lock '/home/ariel/.codeoss/data/User/workspaceStorage/-42846b8c-1/vscode.lock': Lock acquired.
+2025-08-11 23:14:43.915 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-08-11 23:14:43.916 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-08-11 23:14:44.069 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onTerminalProfile:cloudshell.default'
+2025-08-11 23:14:44.118 [error] Error: spawn /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python-env-tools/bin/pet ENOENT
+	at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+	at onErrorNT (node:internal/child_process:483:16)
+	at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2025-08-11 23:14:44.533 [info] Eager extensions activated
+2025-08-11 23:14:44.533 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-08-11 23:14:44.534 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-11 23:14:44.534 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-11 23:14:44.669 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-11 23:14:54.068 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'

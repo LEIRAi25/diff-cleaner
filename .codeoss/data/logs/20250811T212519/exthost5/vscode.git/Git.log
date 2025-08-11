@@ -1,0 +1,70 @@
+2025-08-11 23:14:51.199 [info] [main] Log level: Info
+2025-08-11 23:14:51.199 [info] [main] Validating found git in: "git"
+2025-08-11 23:14:51.199 [info] [main] Using git "2.43.0" from "git"
+2025-08-11 23:14:51.199 [info] [Model][doInitialScan] Initial repository scan started
+2025-08-11 23:14:51.199 [info] > git rev-parse --show-toplevel [13ms]
+2025-08-11 23:14:51.199 [info] > git rev-parse --git-dir --git-common-dir [15ms]
+2025-08-11 23:14:51.199 [info] [Model][openRepository] Opened repository (path): /home/ariel
+2025-08-11 23:14:51.199 [info] [Model][openRepository] Opened repository (real path): /home/ariel
+2025-08-11 23:14:51.199 [info] > git rev-parse --show-toplevel [102ms]
+2025-08-11 23:14:51.199 [info] > git config --get commit.template [111ms]
+2025-08-11 23:14:51.199 [info] > git rev-parse --show-toplevel [41ms]
+2025-08-11 23:14:51.199 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6461ms]
+2025-08-11 23:14:51.199 [info] > git check-ignore -v -z --stdin [11ms]
+2025-08-11 23:14:51.199 [info] > git rev-parse --show-toplevel [6483ms]
+2025-08-11 23:14:51.703 [info] > git rev-parse --show-toplevel [513ms]
+2025-08-11 23:14:51.719 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2025-08-11 23:14:51.743 [info] > git status -z -uall [60ms]
+2025-08-11 23:14:51.743 [info] > git rev-parse --show-toplevel [25ms]
+2025-08-11 23:14:51.794 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [31ms]
+2025-08-11 23:14:51.806 [info] > git config --get commit.template [21ms]
+2025-08-11 23:14:51.806 [info] > git rev-parse --show-toplevel [29ms]
+2025-08-11 23:14:51.808 [info] > git config --get --local branch.master.vscode-merge-base [4ms]
+2025-08-11 23:14:51.808 [warning] [Git][config] git config failed: Failed to execute git
+2025-08-11 23:14:51.834 [info] > git rev-parse --show-toplevel [10ms]
+2025-08-11 23:14:51.835 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-08-11 23:14:51.868 [info] > git show --textconv :diff_cleaner.py [25ms]
+2025-08-11 23:14:51.868 [info] > git ls-files --stage -- diff_cleaner.py [17ms]
+2025-08-11 23:14:51.893 [info] > git reflog master --grep-reflog=branch: Created from *. [77ms]
+2025-08-11 23:14:51.901 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [70ms]
+2025-08-11 23:14:51.923 [info] > git hash-object -t tree /dev/null [30ms]
+2025-08-11 23:14:51.924 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ariel/diff_cleaner.py.git?%7B%22path%22%3A%22%2Fhome%2Fariel%2Fdiff_cleaner.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-11 23:14:51.932 [info] > git hash-object -t tree /dev/null [50ms]
+2025-08-11 23:14:51.932 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ariel/diff_cleaner.py.git?%7B%22path%22%3A%22%2Fhome%2Fariel%2Fdiff_cleaner.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-11 23:14:51.933 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [32ms]
+2025-08-11 23:14:51.934 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-08-11 23:14:51.934 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-08-11 23:14:51.967 [info] > git merge-base refs/heads/master refs/remotes/origin/master [25ms]
+2025-08-11 23:14:51.984 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [18ms]
+2025-08-11 23:14:51.987 [info] > git diff --name-status -z --diff-filter=ADMR 92d0b0c9104c150d5380e647085aa97d619d4532...refs/remotes/origin/master [5ms]
+2025-08-11 23:14:52.000 [info] > git status -z -uall [47ms]
+2025-08-11 23:14:54.204 [info] > git config --get commit.template [45ms]
+2025-08-11 23:14:54.260 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [18ms]
+2025-08-11 23:14:54.294 [info] > git blame --root --incremental 92d0b0c9104c150d5380e647085aa97d619d4532 -- diff_cleaner.py [12ms]
+2025-08-11 23:14:54.295 [info] fatal: no such path diff_cleaner.py in 92d0b0c9104c150d5380e647085aa97d619d4532
+2025-08-11 23:14:54.401 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [18ms]
+2025-08-11 23:14:54.455 [info] > git status -z -uall [106ms]
+2025-08-11 23:14:59.480 [info] > git config --get commit.template [3ms]
+2025-08-11 23:14:59.503 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-08-11 23:14:59.548 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-08-11 23:14:59.567 [info] > git status -z -uall [47ms]
+2025-08-11 23:15:04.604 [info] > git config --get commit.template [13ms]
+2025-08-11 23:15:04.605 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-08-11 23:15:04.641 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-08-11 23:15:04.655 [info] > git status -z -uall [38ms]
+2025-08-11 23:15:12.280 [info] > git config --get commit.template [14ms]
+2025-08-11 23:15:12.281 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-08-11 23:15:12.316 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-08-11 23:15:12.336 [info] > git status -z -uall [42ms]
+2025-08-11 23:15:17.369 [info] > git config --get commit.template [13ms]
+2025-08-11 23:15:17.371 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-08-11 23:15:17.406 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-08-11 23:15:17.420 [info] > git status -z -uall [37ms]
+2025-08-11 23:15:22.449 [info] > git config --get commit.template [12ms]
+2025-08-11 23:15:22.450 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-08-11 23:15:22.481 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-08-11 23:15:22.499 [info] > git status -z -uall [37ms]
+2025-08-11 23:15:32.121 [info] > git config --get commit.template [4ms]
+2025-08-11 23:15:32.139 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-08-11 23:15:32.187 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-08-11 23:15:32.212 [info] > git status -z -uall [58ms]

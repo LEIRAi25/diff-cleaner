@@ -122,3 +122,32 @@ export PROJECT_ID="vantage-468221"
 export REGION="us-central1"
 ./setup_infra.sh
 gcloud builds triggers list | grep diff-cleaner
+git add .
+git commit -m "first copy of diff cleaner"
+git config --global user.email "ariel@leir.homes"
+git config --global user.name "Ariel Ramirez"
+git commit -m "Add all application and build files"
+git push
+git remote add origin https://github.com/LEIRAi25/diff-cleaner.git
+git push
+--set-upstream origin master
+git push --set-upstream origin master
+gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^main$   --build-config=cloudbuild.yaml
+gcloud auth login
+gcloud config set account 
+--help
+gcloud auth list
+gcloud config set account "ariel@leir.homes"
+me=diff-cleaner   --branch-pattern=^main$   --build-config=cloudbuild.yaml
+ERROR: (gcloud.builds.triggers.create.github) You do not currently have an active account selected.
+Please run:
+to obtain new credentials.
+If you have already logged in with a different account, run:
+to select an already authenticated account to use.
+ariel@cloudshell:~ (vantage-468221)$ 
+gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^main$   --build-config=cloudbuild.yaml
+gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^master$   --build-config=cloudbuild.yaml
+gcloud builds triggers create github
+gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^master$   --build-config=cloudbuild.yaml
+gcloud builds triggers create github   --name=diff-cleaner-ci   --repo-owner=LEIRAI25   --repo-name=diff-cleaner   --branch-pattern=^master$   --build-config=cloudbuild.yaml
+echo "Testing the Cloud Build trigger." >> README.md

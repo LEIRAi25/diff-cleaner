@@ -47,3 +47,4 @@
   type: undefined
 } /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py /home/ariel/requirements.txt
 2025-08-11 22:15:39.749 [info] > /bin/python /google/devshell/editor/code-oss-for-cloud-shell/extensions/ms-python.python/python_files/installed_check.py ./requirements.txt
+2025-08-11 22:31:07.478 [info] Discover tests for workspace name: ariel - uri: /home/ariel/diff_cleaner.py
